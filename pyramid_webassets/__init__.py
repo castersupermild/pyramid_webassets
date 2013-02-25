@@ -59,7 +59,7 @@ class PyramidResolver(Resolver):
         try:
             request = get_current_request()
 
-            url = request.static_url(self.search_for_source(item))
+            url = request.static_path(self.search_for_source(item))
 
             return url
         except ValueError as e:
