@@ -50,7 +50,7 @@ class PyramidResolver(Resolver):
         else:
             spec = filepath
 
-        return request.static_url(spec)
+        return request.static_path(spec)
 
     def resolve_output_to_url(self, item):
         if not path.isabs(item):
